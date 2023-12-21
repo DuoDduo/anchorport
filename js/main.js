@@ -53,15 +53,15 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 1000, 'easeInOutExpo');
         return false;
     });
 
 
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
+        delay: 6,
+        time: 1600
     });
 
 
@@ -74,7 +74,7 @@
         console.log($videoSrc);
 
         $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;muted=1&amp;modes&amp;showinfo=0");
         })
 
         $('#videoModal').on('hide.bs.modal', function (e) {
@@ -91,6 +91,7 @@
         dots: false,
         loop: true,
         nav : true,
+        
         navText : [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
