@@ -1,0 +1,82 @@
+.content_container {
+	position: absolute;
+	top: 40%;
+	left: 5%;
+	z-index: 10;
+	color: white;
+	/* text-transform: uppercase; */
+}
+.content_container .album_title {
+	font-size: 10rem;
+	font-family: 'Mohave', sans-serif;
+	margin-bottom: -3rem;
+}
+
+.content_container .subtitle {
+	font-size: 4rem;
+	/* font-family: var(--lato-font-family); */
+	font-style: italic;
+	color: #ececec;
+	margin-bottom: 3rem;
+}
+
+.content_container .available {
+	font-size: 2rem;
+	/* font-family: var(--lato-font-family); */
+	opacity: 0.8;
+}
+
+.order_button {
+	background-color: #201E1E;
+	color: white;
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.1s;
+	border: none;
+	margin: 2rem 0;
+	text-transform: capitalize;
+}
+
+.order_button:focus {
+	outline: none;
+}
+
+.order_button:active {
+	transform: translate(0, 10px);
+}
+.video_container {
+	/* min-width: 100vw; */
+	min-height: 100vh;
+	max-height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background-color: #201E1E;
+	background-image: url('./ima1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.video_container video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:#474444;
+	z-index: 1;
+	mix-blend-mode:multiply;
+}
